@@ -67,26 +67,7 @@ const images = [
   },
 ];
 
-const galleryContainer = document.querySelector('.gallery');
-function createGalleryMarkup(images) {
-  return images
-    .map(({ preview, original, description }) => {
-      return `<li class="gallery-item">
-  <a class="gallery-link" href="${original}">
-    <img
-      class="gallery-image"
-      src="${preview}"
-      data-source="${original}"
-      alt="${description}"
-    />
-  </a>
-</li>
-`;
-    })
-    .join('');
-}
-
-const galleryContainer = document.querySelector('.gallery');
+const galleryContainerElement = document.querySelector('.gallery');
 
 function createGalleryMarkup(images) {
   return images
@@ -106,7 +87,7 @@ function createGalleryMarkup(images) {
 }
 
 const galleryMarkup = createGalleryMarkup(images);
-galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
+galleryContainerElement.insertAdjacentHTML('beforeend', galleryMarkup);
 
 var lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
