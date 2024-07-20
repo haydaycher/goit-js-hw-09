@@ -49,7 +49,7 @@
 
 .go-back-link {
   padding: 16px 24px;
-  background-color: violet;
+  background-color: #4e75ff;
   border-radius: 12px;
   font-weight: 500;
   font-size: 16px;
@@ -61,7 +61,7 @@
 }
 
 .go-back-link:hover {
-  background-color: darkorchid;
+  background-color: #6c8cff;
 }
 
 .main-list {
@@ -75,7 +75,7 @@
 
 .main-list-link {
   padding: 16px 24px;
-  background-color: violet;
+  background-color: #4e75ff;
   border-radius: 12px;
   font-weight: 500;
   font-size: 16px;
@@ -87,7 +87,7 @@
 }
 
 .main-list-link:hover {
-  background-color: darkorchid;
+  background-color: #6c8cff;
 }
 
 .feedback-form {
